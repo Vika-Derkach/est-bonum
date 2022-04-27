@@ -23,14 +23,14 @@ body {
 
 .font-l {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 59px;
+  font-size: 1.84rem;
+  line-height: 2.26rem;
 }
 
 .font-m {
   font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 1.38rem;
+  line-height: 1.69rem;
 }
 
 .font-s {
@@ -44,8 +44,8 @@ body {
   background-color: var(--primary);
   padding: 15px 10px;
   font-weight: 800;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 0.84rem;
+  line-height: 1.03rem;
   border-radius: 10px;
   transition: all 0.2s;
 }
@@ -58,8 +58,8 @@ body {
 .button-secondary {
   padding: 15px 57px 14px 58px;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 0.84rem;
+  line-height: 1.03rem;
   color: #20254d;
   border: 1px solid #20254d;
   border-radius: 10px;
@@ -98,8 +98,8 @@ header {
   margin: 10px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 1.23rem;
 }
 
 .main {
@@ -115,21 +115,21 @@ header {
   color: var(--blue-dark);
   text-align: center;
   background-color: var(--white);
-  padding-top: 54px;
-  padding-bottom: 55px;
+  padding-top: 2.07rem;
+  padding-bottom: 2.11rem;
   width: 50%;
 }
 
 .main__title {
   font-weight: 700;
-  font-size: 80px;
-  line-height: 97px;
-  margin-top: 30px;
+  font-size: 3.07rem;
+  line-height: 3.73rem;
+  margin-top: 1.15rem;
 }
 
 .main__descr {
-  margin-bottom: 30px;
-  margin-top: 16px;
+  margin-bottom: 1.15rem;
+  margin-top: 0.61rem;
 }
 
 .main__img {
@@ -143,5 +143,5 @@ header {
 .main-btn {
   display: block;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1.15rem;
 }
