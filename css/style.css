@@ -251,6 +251,10 @@ header {
   width: 457px;
 }
 
+.text__second {
+  width: 368px;
+}
+
 .our-mission__info__second {
   margin-top: 30px;
   padding-left: 53px;
@@ -386,6 +390,62 @@ header {
   margin-bottom: 50px;
 }
 
+.contact__link {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .color-yellow {
   color: var(--yellow);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--blue-dark);
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 55px;
+}
+
+.footer-descr {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-log {
+  margin-bottom: 30px;
+}
+
+.footer-log img {
+  width: 100%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-contacts {
+  width: 50%;
+  text-align: center;
+}
+
+.footer__item {
+  margin-bottom: 30px;
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+
+.footer-link a {
+  color: var(--blue-dark);
+}
+
+.footer-socials a {
+  margin: 15px;
 }
