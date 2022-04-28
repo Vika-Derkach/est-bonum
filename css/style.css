@@ -42,7 +42,7 @@ body {
 .button-primary {
   color: var(--white);
   background-color: var(--primary);
-  padding: 15px 10px;
+  padding: 0.57rem 0.38rem;
   font-weight: 800;
   font-size: 0.84rem;
   line-height: 1.03rem;
@@ -67,13 +67,13 @@ body {
 }
 
 .button-secondary {
-  padding: 15px 57px 14px 58px;
+  padding: 0.57rem 2.19rem 0.53rem 2.23rem;
   font-weight: 600;
   font-size: 0.84rem;
   line-height: 1.03rem;
   color: #20254d;
   border: 1px solid #20254d;
-  border-radius: 10px;
+  border-radius: 0.38rem;
   background-color: var(--white);
   transition: all 0.2s;
   cursor: pointer;
@@ -99,7 +99,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 33px 50px 24px 50px;
+  padding: 1.26rem 1.92rem 0.92rem 1.92rem;
   align-items: center;
 }
 
@@ -118,7 +118,7 @@ header {
 }
 
 .menu__item {
-  margin: 10px;
+  margin: 0.38rem;
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
@@ -127,7 +127,7 @@ header {
 
 .main,
 .your-future {
-  padding: 100px 50px;
+  padding: 3.84rem 1.92rem;
   background-color: var(--blue-dark);
   display: flex;
   width: 100%;
@@ -180,20 +180,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 50px;
+  padding: 3.84rem 1.92rem;
 }
 
 .about-us__info {
   background-color: var(--blue-dark);
   width: 22.5rem;
   height: 22.5rem;
-  padding: 25px 85px 69px 70px;
-  margin-top: 32px;
+  padding: 0.96rem 3.26rem 2.65rem 2.69rem;
+  margin-top: 1.23rem;
 }
 
 .about-us__title {
   color: var(--yellow);
-  margin-bottom: 16px;
+  margin-bottom: 0.61rem;
 }
 
 .about-us__descr {
@@ -203,7 +203,7 @@ header {
 .about-us__img {
   width: 22.5rem;
   height: 22.5rem;
-  margin-bottom: 32px;
+  margin-bottom: 1.23rem;
 }
 
 .bg-blue {
@@ -217,15 +217,15 @@ header {
 }
 
 .our-mission {
-  padding-top: 50px;
-  padding-bottom: 101px;
+  padding-top: 1.92rem;
+  padding-bottom: 3.84rem;
   background-color: var(--primary);
   color: var(--white);
 }
 
 .our-mission__title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 2.3rem;
 }
 
 .our-mission-container {
@@ -243,29 +243,29 @@ header {
 }
 
 .our-mission__info__first {
-  margin-bottom: 37px;
-  padding-right: 20px;
+  margin-bottom: 1.42rem;
+  padding-right: 0.76rem;
 }
 
 .text__first {
-  width: 457px;
+  width: 17.57rem;
 }
 
 .text__second {
-  width: 368px;
+  width: 14.15rem;
 }
 
 .our-mission__info__second {
-  margin-top: 30px;
-  padding-left: 53px;
+  margin-top: 1.15rem;
+  padding-left: 2.03rem;
 }
 
 .num-img {
-  margin-right: 25px;
+  margin-right: 0.96rem;
 }
 
 .our-mission__img {
-  width: 530px;
+  width: 20.38rem;
 }
 
 .our-mission__img img {
@@ -274,12 +274,12 @@ header {
 
 .our-mission__img__first {
   position: relative;
-  right: -40px;
+  right: -1.53rem;
 }
 
 .activity {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 1.92rem;
+  padding-bottom: 1.92rem;
 }
 
 .activity-container {
@@ -290,23 +290,23 @@ header {
 
 .activity-item {
   text-align: center;
-  margin-right: 15px;
+  margin-right: 0.57rem;
 }
 
 .activity-box {
-  width: 270px;
-  height: 270px;
+  width: 10.38rem;
+  height: 10.38rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 1.92rem;
 }
 
 .activity__header {
   color: var(--blue-dark);
   text-align: center;
-  margin-bottom: 41px;
+  margin-bottom: 1.57rem;
 }
 
 .childcare {
@@ -314,8 +314,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 48px;
-  padding-bottom: 102px;
+  padding-top: 1.84rem;
+  padding-bottom: 3.92rem;
 }
 
 .childcare__container {
@@ -323,12 +323,12 @@ header {
 }
 
 .childcare__info {
-  padding: 18px 43px;
+  padding: 0.69rem 1.65rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--blue-dark);
-  margin-bottom: 52px;
+  margin-bottom: 2rem;
   width: 22.5rem;
   height: 22.5rem;
   color: var(--white);
@@ -343,51 +343,51 @@ header {
   color: var(--blue-dark);
   text-align: center;
   background-color: var(--white);
-  padding: 61px 83px 0 37px;
+  padding: 2.3rem 3.19rem 0 1.42rem;
   height: 23.73rem;
   width: 25.76rem;
 }
 
 .your-future__title {
-  margin-bottom: 50px;
+  margin-bottom: 1.92rem;
 }
 
 .your-future__descr {
-  margin-bottom: 50px;
+  margin-bottom: 1.92rem;
 }
 
 .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 105px;
+  padding-top: 3.84rem;
+  padding-bottom: 4.03rem;
   background-color: var(--yellow);
 }
 
 .contacts__map {
-  margin-bottom: 24px;
+  margin-bottom: 0.92rem;
   width: 22.5rem;
   height: 22.5rem;
 }
 
 .contacts__info {
   background-color: var(--blue-dark);
-  padding: 45px 70px 0 85px;
+  padding: 1.73rem 2.69rem 0 3.26rem;
   width: 22.5rem;
   height: 22.5rem;
 }
 
 .contacts__title {
-  margin-bottom: 45px;
+  margin-bottom: 1.73rem;
 }
 
 .contact__item {
   color: var(--white);
   font-weight: 600;
-  font-size: 26px;
-  line-height: 32px;
-  margin-bottom: 50px;
+  font-size: 1rem;
+  line-height: 1.23rem;
+  margin-bottom: 1.92rem;
 }
 
 .contact__link {
@@ -405,8 +405,8 @@ header {
   align-items: flex-start;
   color: var(--blue-dark);
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 1.92rem;
+  padding-bottom: 2.11rem;
 }
 
 .footer-descr {
@@ -415,7 +415,7 @@ header {
 }
 
 .footer-log {
-  margin-bottom: 30px;
+  margin-bottom: 1.15rem;
 }
 
 .footer-log img {
@@ -426,7 +426,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.15rem;
 }
 
 .footer-contacts {
@@ -435,7 +435,7 @@ header {
 }
 
 .footer__item {
-  margin-bottom: 30px;
+  margin-bottom: 1.15rem;
 }
 
 .footer-link {
@@ -447,5 +447,5 @@ header {
 }
 
 .footer-socials a {
-  margin: 15px;
+  margin: 0.57rem;
 }
