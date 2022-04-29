@@ -32,6 +32,10 @@
         }
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/normalize.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,9 +53,9 @@
         <img src="./img/logo.png" alt="logo" />
       </div>
       <menu class="menu">
-        <div class="menu__item">Про нас</div>
-        <div class="menu__item">Діяльність</div>
-        <div class="menu__item">Контакти</div>
+        <div class="menu__item"><a href="#about_us">Про нас</a></div>
+        <div class="menu__item"><a href="#activity">Діяльність</a></div>
+        <div class="menu__item"><a href="#contacts">Контакти</a></div>
         <div class="menu__item">
           <button class="button-primary">Благодійний внесок</button>
         </div>
@@ -76,7 +80,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section id="about_us" class="about-us">
         <div class="about-us__info">
           <div class="about-us__title font-l">Про нас</div>
           <div class="about-us__descr font-s">
@@ -126,7 +130,7 @@
         </div>
       </section>
 
-      <section class="activity">
+      <section id="activity" class="activity">
         <div class="activity__header font-l">Діяльність</div>
         <div class="activity-container">
           <div class="activity-item">
@@ -164,7 +168,34 @@
           <img src="./img/main.png" alt="childcare" class="img" />
         </div>
       </section>
-      <section class="slider"></section>
+      <section class="slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/mission-first.png" alt="" class="img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/main.png" alt="" class="img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/help.png" alt="" class="img" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-prev-button swiper-arrow">
+            <img src="./img/left-arrow.png" alt="" />
+          </div>
+          <div class="swiper-next-button swiper-arrow">
+            <img src="./img/right-arrow.png" alt="" />
+          </div>
+        </div>
+      </section>
 
       <section class="your-future">
         <div class="your-future__img">
@@ -183,7 +214,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10380.590375168871!2d26.978307!3d49.4250236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd07a23f3da082da!2sKam&#39;yanets%CA%B9ka%2052!5e0!3m2!1sru!2sua!4v1651146421475!5m2!1sru!2sua"
@@ -203,15 +234,11 @@
           </div>
           <div class="contact__item">
             <span class="color-yellow">Тел.:</span>
-            <a href="tel:+38(096)7405767" class="contact__link"
-              >+38 (096) 740 57 67</a
-            >
+            <a href="tel:+38(096)7405767">+38 (096) 740 57 67</a>
           </div>
           <div class="contact__item">
             <span class="color-yellow">Ел. пошта:</span>
-            <a href="mailto:est.bonum.ua@gmail.com" class="contact__link"
-              >est.bonum.ua@gmail.com</a
-            >
+            <a href="mailto:est.bonum.ua@gmail.com">est.bonum.ua@gmail.com</a>
           </div>
         </div>
       </section>
@@ -227,9 +254,9 @@
       </div>
       <div class="footer-contacts">
         <div class="footer-menu font-s">
-          <div>ПРО НАС</div>
-          <div>ДІЯЛЬНІСТЬ</div>
-          <div>КОНТАКТИ</div>
+          <div><a href="#about_us">ПРО НАС</a></div>
+          <div><a href="#activity">ДІЯЛЬНІСТЬ</a></div>
+          <div><a href="#contacts">КОНТАКТИ</a></div>
         </div>
         <div class="footer__item footer-link font-s">
           Тел.: <a href="tel:+38(096)7405767">+38 (096) 740 57 67</a>
@@ -247,5 +274,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

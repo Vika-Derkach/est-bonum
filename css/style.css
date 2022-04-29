@@ -5,6 +5,7 @@ body {
   color: var(--black);
   background-color: var(--white);
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -19,6 +20,14 @@ body {
   --gray-dark: #686b87;
   --primary: #5271ff;
   --yellow: #fee036;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .font-l {
@@ -286,11 +295,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .activity-item {
   text-align: center;
   margin-right: 0.57rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
 }
 
 .activity-box {
@@ -390,11 +405,6 @@ header {
   margin-bottom: 1.92rem;
 }
 
-.contact__link {
-  color: var(--white);
-  text-decoration: none;
-}
-
 .color-yellow {
   color: var(--yellow);
 }
@@ -448,4 +458,135 @@ header {
 
 .footer-socials a {
   margin: 0.57rem;
+}
+
+.footer-socials img {
+  width: 1.53rem;
+}
+
+.slider {
+  padding-top: 1.92rem;
+  padding-bottom: 3.84rem;
+  background-color: var(--primary);
+}
+
+.swiper {
+  height: 20.76rem;
+  width: 45rem;
+}
+
+.swiper-slide {
+  width: 22.5rem;
+  height: 20.76rem;
+}
+
+.swiper-arrow {
+  width: 2.61rem;
+  height: 2.92rem;
+  position: absolute;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-prev-button {
+  bottom: 0%;
+  right: 50%;
+}
+
+.swiper-arrow img {
+  width: 33%;
+}
+
+.swiper-next-button {
+  bottom: 0%;
+  left: 50%;
+}
+
+@media (max-width: 600px) {
+  .main,
+  .about-us,
+  .your-future,
+  .contacts,
+  .childcare {
+    flex-direction: column;
+  }
+  .activity-item {
+    width: 33%;
+    margin-bottom: 10px;
+  }
+  .swiper {
+    width: 73%;
+  }
+
+  .our-mission-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .our-mission__first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-mission__second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-mission__img__first {
+    right: auto;
+  }
+
+  .about-us__info {
+    margin-top: 0;
+  }
+  .about-us__img {
+    margin-bottom: 0;
+  }
+
+  .contacts__map {
+    margin-bottom: 0;
+  }
+
+  .childcare__container {
+    margin-bottom: 10px;
+  }
+
+  .footer-descr {
+    width: 37%;
+  }
+
+  .footer-contacts {
+    width: 55%;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-descr {
+    width: 50%;
+  }
+
+  .footer-descr {
+    margin-bottom: 15px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-menu div {
+    margin: 5px;
+  }
 }
