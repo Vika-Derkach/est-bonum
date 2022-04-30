@@ -41,3 +41,15 @@ for (let i = 0; i < nav_link.length; i++) {
     menu_mobile.classList.toggle("menu-mobile_active");
   });
 }
+
+var serviceItems = document.querySelectorAll(".read-more");
+serviceItems.forEach(function (elem) {
+  elem.addEventListener("click", function (evt) {
+    var number = evt.currentTarget.dataset.number;
+    console.log(number);
+    var activeService = document.querySelector(".tab-active");
+    activeService.classList.remove("tab-active");
+    var newText = document.querySelector(".tab-item__" + number);
+    newText.classList.add("tab-active");
+  });
+});
