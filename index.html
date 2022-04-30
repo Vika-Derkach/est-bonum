@@ -48,14 +48,35 @@
   </head>
 
   <body>
+    <section class="menu-mobile-main hidden-menu__mobile">
+      <a class="menu-link" href="#menu-mobile">
+        <span></span>
+      </a>
+      <div class="menu-mobile font-m">
+        <ul>
+          <li><a href="#about_us">Про нас</a></li>
+          <li><a href="#activity">Діяльність</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </section>
     <header>
-      <div class="logo">
+      <div class="logo hidden-mobile">
         <img src="./img/logo.png" alt="logo" />
       </div>
+      <div class="logo logo-mobile mobile-only">
+        <img src="./img/logo-mobile.png" alt="logo-mobile" />
+      </div>
       <menu class="menu">
-        <div class="menu__item"><a href="#about_us">Про нас</a></div>
-        <div class="menu__item"><a href="#activity">Діяльність</a></div>
-        <div class="menu__item"><a href="#contacts">Контакти</a></div>
+        <div class="menu__item hidden-menu">
+          <a href="#about_us">Про нас</a>
+        </div>
+        <div class="menu__item hidden-menu">
+          <a href="#activity">Діяльність</a>
+        </div>
+        <div class="menu__item hidden-menu">
+          <a href="#contacts">Контакти</a>
+        </div>
         <div class="menu__item">
           <button class="button-primary">Благодійний внесок</button>
         </div>
