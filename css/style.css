@@ -55,7 +55,7 @@ a:active {
   font-weight: 800;
   font-size: 0.84rem;
   line-height: 1.03rem;
-  border-radius: 10px;
+  border-radius: 0.38rem;
   transition: all 0.2s;
   border: none;
   cursor: pointer;
@@ -106,15 +106,14 @@ a:active {
 
 .menu-mobile-main .menu-link {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 5rem;
+  width: 5rem;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   z-index: 8;
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 1.3rem;
+  right: 1.3rem;
 }
 .menu-mobile-main .menu-link span,
 .menu-mobile-main .menu-link span:before,
@@ -221,6 +220,8 @@ header {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.23rem;
+
+  white-space: nowrap;
 }
 
 .main,
@@ -611,6 +612,10 @@ header {
   display: none;
 }
 
+.menu__item__empty {
+  width: 50px;
+}
+
 @media (max-width: 768px) {
   .hidden-menu {
     display: none;
@@ -621,10 +626,7 @@ header {
   }
 
   header {
-    justify-content: flex-start;
-  }
-
-  header {
+    justify-content: space-around;
     position: fixed;
   }
 
@@ -648,7 +650,7 @@ header {
     flex-direction: column;
   }
   .activity-item {
-    width: 33%;
+    width: 36%;
     margin-bottom: 10px;
   }
   .swiper {
