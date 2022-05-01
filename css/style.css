@@ -86,10 +86,11 @@ a:active {
   background-color: var(--white);
   transition: all 0.2s;
   cursor: pointer;
+  height: 2.35rem;
 }
 
 .button-secondary:hover {
-  border: 3px solid #20254d;
+  border: 0.11rem solid #20254d;
   transition: all 0.2s;
 }
 
@@ -234,16 +235,11 @@ header {
   justify-content: center;
 }
 
-.main {
-  /* padding-top: 329px; */
-}
-
 .main__info {
   color: var(--blue-dark);
   text-align: center;
   background-color: var(--white);
-  padding-top: 2.07rem;
-  padding-bottom: 2.11rem;
+  padding: 2.07rem 0.76rem 2.11rem 0.76rem;
   height: 23.73rem;
   width: 25.76rem;
 }
@@ -253,6 +249,7 @@ header {
   font-size: 3.07rem;
   line-height: 3.73rem;
   margin-top: 1.15rem;
+  white-space: nowrap;
 }
 
 .main__descr {
@@ -426,7 +423,7 @@ header {
   margin-bottom: 1.57rem;
 }
 
-.childcare {
+.details {
   background-color: var(--yellow);
   display: none;
   justify-content: center;
@@ -435,11 +432,11 @@ header {
   padding-bottom: 3.92rem;
 }
 
-.childcare__container {
+.details__container {
   text-align: center;
 }
 
-.childcare__info {
+.details__info {
   padding: 0.69rem 1.65rem;
   display: flex;
   justify-content: center;
@@ -451,7 +448,7 @@ header {
   color: var(--white);
 }
 
-.childcare__img {
+.details__img {
   width: 22.5rem;
   height: 22.5rem;
 }
@@ -650,7 +647,7 @@ header {
   .about-us,
   .your-future,
   .contacts,
-  .childcare {
+  .details {
     flex-direction: column;
   }
   .activity-item {
@@ -694,7 +691,7 @@ header {
     margin-bottom: 0;
   }
 
-  .childcare__container {
+  .details__container {
     margin-bottom: 10px;
   }
 
