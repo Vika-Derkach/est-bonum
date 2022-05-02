@@ -105,6 +105,10 @@ a:active {
   background-color: var(--white);
 }
 
+.button-en {
+  padding: 0.57rem 3.53rem;
+}
+
 .menu-mobile-main .menu-link {
   display: block;
   height: 5rem;
