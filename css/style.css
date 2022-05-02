@@ -225,8 +225,8 @@ header {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.23rem;
-
   white-space: nowrap;
+  color: var(--blue-dark);
 }
 
 .main,
@@ -248,6 +248,10 @@ header {
   width: 25.76rem;
 }
 
+.main__info-en {
+  padding: 2.07rem 0.9rem 2.11rem 0.9rem;
+}
+
 .main__title {
   font-weight: 700;
   font-size: 3.07rem;
@@ -259,6 +263,10 @@ header {
 .main__descr {
   margin-bottom: 1.15rem;
   margin-top: 0.61rem;
+}
+
+.main__descr {
+  margin-top: 1.53rem;
 }
 
 .main__img,

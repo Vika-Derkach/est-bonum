@@ -42,14 +42,17 @@ for (let i = 0; i < nav_link.length; i++) {
   });
 }
 
-var serviceItems = document.querySelectorAll(".read-more");
-serviceItems.forEach(function (elem) {
+const detailsItems = document.querySelectorAll(".read-more");
+detailsItems.forEach(function (elem) {
   elem.addEventListener("click", function (evt) {
-    var number = evt.currentTarget.dataset.number;
-    console.log(number);
-    var activeService = document.querySelector(".tab-active");
-    activeService.classList.remove("tab-active");
-    var newText = document.querySelector(".tab-item__" + number);
+    const number = evt.currentTarget.dataset.number;
+
+    const activeService = document.querySelector(".tab-active");
+    if (activeService) {
+      activeService.classList.remove("tab-active");
+    }
+
+    const newText = document.querySelector(".tab-item__" + number);
     newText.classList.add("tab-active");
   });
 });
