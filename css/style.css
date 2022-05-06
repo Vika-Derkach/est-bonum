@@ -115,7 +115,7 @@ a:active {
   width: 5rem;
   background-color: #fff;
   border-radius: 50%;
-  z-index: 8;
+  z-index: 4;
   position: fixed;
   top: 1.3rem;
   right: 1.3rem;
@@ -156,7 +156,7 @@ a:active {
 }
 
 .menu-mobile-main .menu-mobile {
-  z-index: 7;
+  z-index: 3;
   opacity: 0.95;
   background: linear-gradient(blue, var(--yellow));
   position: fixed;
@@ -632,6 +632,78 @@ header {
 .tab-active {
   display: flex;
 }
+.overlay {
+  position: fixed;
+  /* display: none; */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.popup-close {
+  position: absolute;
+  top: 1.15rem;
+  right: 2.69rem;
+}
+.popup-close:after {
+  content: "";
+  height: 1.15rem;
+  border-left: 2px solid #20254d;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 28px;
+}
+
+.popup-close:before {
+  content: "";
+  height: 1.15rem;
+  border-left: 2px solid #20254d;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 28px;
+}
+
+.popup {
+  padding: 5rem 3.84rem 2.3rem 3.84rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.23rem;
+  color: #20254d;
+  width: 37.3rem;
+  margin: auto;
+  background-color: var(--white);
+  position: relative;
+}
+
+.popup-title {
+  font-weight: 400;
+  font-size: 1.53rem;
+  line-height: 1.88rem;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.popup-buttons .main-btn {
+  margin: unset;
+  margin-right: 1.15rem;
+}
+
+.popup-descr,
+.popup-title,
+.popup-buttons {
+  margin-bottom: 1.92rem;
+  text-align: center;
+}
+
+.popup-requisite,
+.popup-details {
+  margin-bottom: 0.96rem;
+}
 
 @media (max-width: 768px) {
   .hidden-menu {
@@ -747,5 +819,9 @@ header {
   }
   .mobile-only {
     display: block;
+  }
+
+  .popup {
+    width: 100%;
   }
 }
