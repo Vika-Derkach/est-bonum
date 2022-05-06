@@ -56,3 +56,23 @@ detailsItems.forEach(function (elem) {
     newText.classList.add("tab-active");
   });
 });
+
+const openModal = document.querySelector(".donate-btn");
+const overlay = document.querySelector(".overlay");
+const closeModal = overlay.querySelector(".popup-close");
+openModal.addEventListener("click", function () {
+  overlay.style.display = "block";
+  document.body.style.overflow = "hidden";
+});
+
+closeModal.addEventListener("click", function () {
+  overlay.style.display = "none";
+  document.body.style.overflow = "";
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    overlay.style.display = "none";
+    document.body.style.overflow = "";
+  }
+});

@@ -634,7 +634,7 @@ header {
 }
 .overlay {
   position: fixed;
-  /* display: none; */
+  display: none;
   top: 0;
   width: 100%;
   height: 100%;
@@ -645,24 +645,25 @@ header {
 .popup-close {
   position: absolute;
   top: 1.15rem;
-  right: 2.69rem;
+  right: 1.15rem;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
 }
-.popup-close:after {
-  content: "";
+.popup-close__first {
   height: 1.15rem;
   border-left: 2px solid #20254d;
   position: absolute;
   transform: rotate(45deg);
-  left: 28px;
+  left: 28%;
 }
 
-.popup-close:before {
-  content: "";
+.popup-close__second {
   height: 1.15rem;
   border-left: 2px solid #20254d;
   position: absolute;
   transform: rotate(-45deg);
-  left: 28px;
+  left: 28%;
 }
 
 .popup {
@@ -703,6 +704,15 @@ header {
 .popup-requisite,
 .popup-details {
   margin-bottom: 0.96rem;
+}
+
+@media (min-width: 3000px) {
+  .logo {
+    width: 13%;
+  }
+  .footer-log img {
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
