@@ -287,6 +287,10 @@ header {
   margin-bottom: 1.15rem;
 }
 
+.color-primery {
+  color: var(--primary);
+}
+
 .about-us {
   background-color: var(--yellow);
   display: flex;
