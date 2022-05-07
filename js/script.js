@@ -76,3 +76,15 @@ document.addEventListener("keydown", function (event) {
     document.body.style.overflow = "";
   }
 });
+
+const langBtn = document.querySelector(".change-lang");
+const langBlock = document.querySelector(".language");
+const langActive = document.querySelector(".lang-active");
+
+langBtn.addEventListener("click", function () {
+  langBlock.style.display = "block";
+});
+
+langActive.addEventListener("click", function () {
+  langBlock.style.display = "none";
+});
