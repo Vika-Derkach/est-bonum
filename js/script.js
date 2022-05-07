@@ -56,24 +56,51 @@ detailsItems.forEach(function (elem) {
     newText.classList.add("tab-active");
   });
 });
+const isSelf = (elem, classForCheck) => {
+  return (
+    elem.classList.contains(classForCheck) || elem.closest(`.${classForCheck}`)
+  );
+};
 
-const openModal = document.querySelector(".donate-btn");
+const closeBlock = (closeEl) => {
+  closeEl.style.display = "none";
+};
+
+const openModal = document.querySelectorAll(".donate-btn");
 const overlay = document.querySelector(".overlay");
-const closeModal = overlay.querySelector(".popup-close");
-openModal.addEventListener("click", function () {
-  overlay.style.display = "block";
-  document.body.style.overflow = "hidden";
-});
+const popup = overlay.querySelector(".popup");
+const closeModal = popup.querySelector(".popup-close");
+
+const popupBlockCloseEvent = (evt) => {
+  if (!isSelf(evt.target, "popup")) {
+    closeBlock(overlay);
+    document.body.style.overflow = "";
+    document.removeEventListener("click", popupBlockCloseEvent);
+  }
+};
+
+for (let i = 0; i < openModal.length; i++) {
+  openModal[i].addEventListener("click", function () {
+    overlay.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    setTimeout(() => {
+      document.addEventListener("click", popupBlockCloseEvent);
+    }, 0);
+  });
+}
 
 closeModal.addEventListener("click", function () {
-  overlay.style.display = "none";
+  closeBlock(overlay);
   document.body.style.overflow = "";
+  document.removeEventListener("click", popupBlockCloseEvent);
 });
 
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    overlay.style.display = "none";
+    closeBlock(overlay);
     document.body.style.overflow = "";
+    document.removeEventListener("click", popupBlockCloseEvent);
   }
 });
 
@@ -81,10 +108,21 @@ const langBtn = document.querySelector(".change-lang");
 const langBlock = document.querySelector(".language");
 const langActive = document.querySelector(".lang-active");
 
+const langBlockCloseEvent = (evt) => {
+  if (!isSelf(evt.target, "language")) {
+    closeBlock(langBlock);
+    document.removeEventListener("click", langBlockCloseEvent);
+  }
+};
+
 langBtn.addEventListener("click", function () {
   langBlock.style.display = "block";
+  setTimeout(() => {
+    document.addEventListener("click", langBlockCloseEvent);
+  }, 0);
 });
 
 langActive.addEventListener("click", function () {
-  langBlock.style.display = "none";
+  closeBlock(langBlock);
+  document.removeEventListener("click", langBlockCloseEvent);
 });
