@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./img/logo/footer-logo.png" />
+    <link rel="shortcut icon" href="./img/logo/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Est Bonum</title>
     <style>
@@ -114,6 +114,7 @@
           </div>
         </div>
       </section>
+
       <section id="about_us" class="about-us">
         <div class="about-us__info">
           <div class="about-us__title font-l">Про нас</div>
@@ -375,7 +376,22 @@
         <div class="popup-descr">візьміть участь у створенні майбутнього</div>
         <div class="popup-buttons">
           <button class="main-btn button-primary">Зробити внесок</button>
-          <button class="button-secondary">PayPal</button>
+          <div id="donate-button-container">
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_top"
+            >
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="NZF7QSBQ93ND4"
+              />
+              <button id="donate-button" type="submit" class="button-secondary">
+                PayPal
+              </button>
+            </form>
+          </div>
         </div>
 
         <div class="popup-details font-m">Реквізити:</div>

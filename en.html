@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./img/logo/logo-mobile.png" />
+    <link rel="shortcut icon" href="./img/logo/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Est Bonum</title>
     <style>
@@ -76,9 +76,17 @@
           <a href="#contacts">Contacts</a>
         </div>
         <div class="menu__item">
-          <button class="button-primary button-en">Donate</button>
+          <button class="button-primary button-en donate-btn">Donate</button>
         </div>
-        <div class="menu__item"><a href="./index.html">EN</a></div>
+        <div class="menu__item menu__lang">
+          <div class="change-lang">EN</div>
+
+          <div class="language">
+            <div class="lang__item lang-active">EN</div>
+            <div class="lang__item"><a href="./index.html">UA</a></div>
+          </div>
+        </div>
+
         <div class="menu__item__empty"></div>
       </menu>
     </header>
@@ -94,8 +102,12 @@
             Take part in creating a new future
           </div>
           <div class="buttons">
-            <button class="main-btn button-primary button-en">Donate</button>
-            <button class="button-secondary button-en">Details</button>
+            <button class="main-btn button-primary button-en donate-btn">
+              Donate
+            </button>
+            <a href="#activity">
+              <button class="button-secondary button-en">Details</button></a
+            >
           </div>
         </div>
       </section>
@@ -205,7 +217,7 @@
               transfer clothes, baby food, diapers, etc. to the cities of
               Kharkiv, Chernihiv, Khmelnytsky and others.
             </div>
-            <button class="button-primary button-en">Donate</button>
+            <button class="button-primary button-en donate-btn">Donate</button>
           </div>
           <div class="details__img">
             <img
@@ -222,7 +234,7 @@
               institutions that help refugees, displaced persons and the
               wounded.
             </div>
-            <button class="button-primary button-en">Donate</button>
+            <button class="button-primary button-en donate-btn">Donate</button>
           </div>
           <div class="details__img">
             <img src="./img/med.jpeg" alt="Details medicine" class="img" />
@@ -234,7 +246,7 @@
               We are actively raising funds for targeted assistance to the
               Ukrainian military.
             </div>
-            <button class="button-primary button-en">Donate</button>
+            <button class="button-primary button-en donate-btn">Donate</button>
           </div>
           <div class="details__img">
             <img src="./img/military.jpeg" alt="Details army" class="img" />
@@ -247,7 +259,7 @@
               construction or purchase of ready-made housing for people who lost
               their homes as a result of the war.
             </div>
-            <button class="button-primary button-en">Donate</button>
+            <button class="button-primary button-en donate-btn">Donate</button>
           </div>
           <div class="details__img">
             <img src="./img/house.jpeg" alt="Details housing" class="img" />
@@ -286,7 +298,7 @@
             part of a great Ukrainian dream!
           </div>
 
-          <button class="button-primary button-en">Donate</button>
+          <button class="button-primary button-en donate-btn">Donate</button>
         </div>
       </section>
 
@@ -358,6 +370,39 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="popup">
+        <div class="popup-close">
+          <div class="popup-close__first"></div>
+          <div class="popup-close__second"></div>
+        </div>
+        <div class="popup-title">To contribute</div>
+        <div class="popup-descr">take part in creating the future</div>
+        <div class="popup-buttons">
+          <button class="main-btn button-primary button-en">Donate</button>
+          <button class="button-secondary button-en">PayPal</button>
+        </div>
+
+        <div class="popup-details font-m">Реквізити:</div>
+        <div class="popup-requisite">
+          Charitable Foundation "EST BONUM ", company code 44693493 <br />
+          44693493 <br />
+          Bank: JSC CB "Privat Bank", Khmelnytsky branch
+        </div>
+        <div class="popup-requisite">
+          Account (UAH) <br />
+          IBAN: UA223154050000026002052342965
+        </div>
+        <div class="popup-requisite">
+          Account (USD) <br />
+          IBAN: UA533154050000026005052355785
+        </div>
+        <div class="popup-requisite">
+          Account (EUR) <br />
+          IBAN: UA913154050000026009052341676
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>

@@ -447,7 +447,6 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /* width: 20%; */
 }
 
 .activity-box {
@@ -670,8 +669,8 @@ header {
   top: 1.15rem;
   right: 1.15rem;
   cursor: pointer;
-  width: 26px;
-  height: 26px;
+  width: 1rem;
+  height: 1rem;
 }
 .popup-close__first {
   height: 1.15rem;
@@ -698,7 +697,10 @@ header {
   width: 37.3rem;
   margin: auto;
   background-color: var(--white);
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .popup-title {
