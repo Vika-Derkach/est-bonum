@@ -121,9 +121,9 @@
           <div class="about-us__descr font-s">
             БО "Благодійний фонд EST BONUM", створений для допомоги тим, хто
             постраждав від війни. Ми опікуємося людьми, які залишилися без житла
-            внаслідок російського вторгнення в Україну та прганемо забезпечити
-            краще майбутнє українським сім'ям. Ми створюємо якісні житлові
-            комплекси для ветеранів, військових, переселенців, тощо
+            внаслідок російського вторгнення в Україну та праганемо забезпечити
+            краще майбутнє українським сім'ям. Ми організовуємо фінансування
+            будівництва для ветеранів, військових, переселенців, тощо.
           </div>
         </div>
         <div class="about-us__img">
@@ -201,10 +201,10 @@
         <div class="details tab-item__1">
           <div class="details__container">
             <div class="details__info">
-              За підтримки Mercy Corp допомагаємо дітям, що постраждали
+              За підтримки Mercy Corps допомагаємо дітям, що постраждали
               внаслідок російсько-української війни. Надаємо кошти на різні
-              потреби, передаємо одяг, дитяче харчування, памперси, тощо у міста
-              Харків, Чернігів, Хмельницький та інші.
+              потреби, передаємо одяг, дитяче харчування, памперси, тощо у
+              міста, які постраждали від війни.
             </div>
             <button class="button-primary donate-btn">
               Благодійний внесок
@@ -377,9 +377,22 @@
         <div class="popup-buttons">
           <button class="main-btn button-primary">Зробити внесок</button>
 
-          <button id="donate-button" type="submit" class="button-secondary">
-            PayPal
-          </button>
+          <div id="donate-button-container">
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_top"
+            >
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="KXJW539JYTZKC"
+              />
+              <button id="donate-button" type="submit" class="button-secondary">
+                PayPal
+              </button>
+            </form>
+          </div>
         </div>
 
         <div class="popup-details font-m">Реквізити:</div>

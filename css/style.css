@@ -701,6 +701,9 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: inherit;
 }
 
 .popup-title {

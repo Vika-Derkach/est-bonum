@@ -119,7 +119,7 @@
             affected by the war. We care for people who have lost their homes as
             a result of the Russian invasion of Ukraine, and we strive to
             provide a better future for Ukrainian families. Furthermore, we
-            create quality housing estates for veterans, military, migrants,
+            organize financing of construction for veterans, military, migrants,
             etc.
           </div>
         </div>
@@ -212,10 +212,10 @@
         <div class="details tab-item__1">
           <div class="details__container">
             <div class="details__info">
-              With the support of Mercy Corp, we help children affected by the
+              With the support of Mercy Corps, we help children affected by the
               russian-Ukrainian war. We provide funds for various needs,
-              transfer clothes, baby food, diapers, etc. to the cities of
-              Kharkiv, Chernihiv, Khmelnytsky and others.
+              transfer clothes, baby food, diapers, etc. to the cities affected
+              by the war.
             </div>
             <button class="button-primary button-en donate-btn">Donate</button>
           </div>
@@ -380,7 +380,26 @@
         <div class="popup-descr">take part in creating the future</div>
         <div class="popup-buttons">
           <button class="main-btn button-primary button-en">Donate</button>
-          <button class="button-secondary button-en">PayPal</button>
+          <div id="donate-button-container">
+            <form
+              action="https://www.paypal.com/donate"
+              method="post"
+              target="_top"
+            >
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="KXJW539JYTZKC"
+              />
+              <button
+                id="donate-button"
+                type="submit"
+                class="button-secondary button-en"
+              >
+                PayPal
+              </button>
+            </form>
+          </div>
         </div>
 
         <div class="popup-details font-m">Details:</div>
