@@ -430,7 +430,110 @@
         <div class="popup-title">Зробити внесок</div>
         <div class="popup-descr">візьміть участь у створенні майбутнього</div>
         <div class="popup-buttons">
-          <button class="main-btn button-primary">Зробити внесок</button>
+          <form
+            method="POST"
+            accept-charset="utf-8"
+            action="https://www.liqpay.ua/api/3/checkout"
+          >
+            <input
+              type="hidden"
+              name="data"
+              value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCR0LvQsNCz0L7QtNGW0LnQvdC40Lkg0LLQvdC10YHQvtC6IiwicHVibGljX2tleSI6Imk3OTEwNTg0NjI4MCIsImxhbmd1YWdlIjoidWsifQ=="
+            />
+            <input
+              type="hidden"
+              name="signature"
+              value="zVqkWOMdcWqQq77OjkjKG4Z7spg="
+            />
+            <button class="main-btn button-primary" id="liqpay_checkout">
+              Зробити внесок
+            </button>
+          </form>
+          <!-- <form
+            method="POST"
+            accept-charset="utf-8"
+            action="https://www.liqpay.ua/api/3/checkout"
+          >
+            <input
+              type="hidden"
+              name="data"
+              value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk3OTEwNTg0NjI4MCIsImxhbmd1YWdlIjoidWsifQ=="
+            />
+            <input
+              type="hidden"
+              name="signature"
+              value="PbQDB9M22UFfDmvczkdF5YlsEhw="
+            />
+
+            <button class="main-btn button-primary" id="liqpay_checkout">
+              Зробити внесок
+            </button>
+          </form> -->
+          <!-- тут -->
+          <!-- <form
+            method="POST"
+            accept-charset="utf-8"
+            action="https://www.liqpay.ua/api/3/checkout"
+          >
+            <input
+              type="hidden"
+              name="data"
+              value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk3OTEwNTg0NjI4MCIsImxhbmd1YWdlIjoidWsifQ=="
+            />
+            <input
+              type="hidden"
+              name="signature"
+              value="aDsWbUg2lNUGTzyvmheU5bX++tY="
+            />
+            <button class="main-btn button-primary" id="liqpay_checkout">
+              Зробити внесок
+            </button>
+          </form> -->
+
+          <!-- <form
+            method="POST"
+            accept-charset="utf-8"
+            action="https://www.liqpay.ua/api/3/checkout"
+          >
+            <input
+              type="hidden"
+              name="data"
+              value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJpNzkxMDU4NDYyODAiLCJsYW5ndWFnZSI6InJ1In0="
+            />
+            <input
+              type="hidden"
+              name="signature"
+              value="yX49rHg8QQT3O16WGTqiCVKD0tQ="
+              language="en"
+            />
+            <button class="main-btn button-primary" id="liqpay_checkout">
+              Зробити внесок
+            </button>
+          </form> -->
+          <!-- <script>
+            window.LiqPayCheckoutCallback = function () {
+              LiqPayCheckout.init({
+                data:
+                  "eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv" +
+                  "biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv" +
+                  "biIgOiAiZGVzY3JpcHRpb24gdGV4dCIsICJvcmRlcl9pZCIgOiAib3JkZXJfaWRfMSIgfQ==",
+                signature: "QvJD5u9Fg55PCx/Hdz6lzWtYwcI=",
+                embedTo: "#liqpay_checkout",
+                language: "ru",
+                mode: "embed", // embed || popup
+              })
+                .on("liqpay.callback", function (data) {
+                  console.log(data.status);
+                  console.log(data);
+                })
+                .on("liqpay.ready", function (data) {
+                  // ready
+                })
+                .on("liqpay.close", function (data) {
+                  // close
+                });
+            };
+          </script> -->
 
           <div id="donate-button-container">
             <form
