@@ -439,7 +439,24 @@
         <div class="popup-title">To contribute</div>
         <div class="popup-descr">take part in creating the future</div>
         <div class="popup-buttons">
-          <button class="main-btn button-primary button-en">Donate</button>
+          <form
+            method="POST"
+            accept-charset="utf-8"
+            action="https://www.liqpay.ua/api/3/checkout"
+          >
+            <input
+              type="hidden"
+              name="data"
+              value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6IkNIQVJJVFkiLCJwdWJsaWNfa2V5IjoiaTc5MTA1ODQ2MjgwIiwibGFuZ3VhZ2UiOiJlbiJ9"
+            />
+            <input
+              type="hidden"
+              name="signature"
+              value="/LeHshh4nSplcIVUFLAchkTr/1s="
+            />
+            <button class="main-btn button-primary button-en">Donate</button>
+          </form>
+
           <div id="donate-button-container">
             <form
               action="https://www.paypal.com/donate"
